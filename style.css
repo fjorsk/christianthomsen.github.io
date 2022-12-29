@@ -1,19 +1,25 @@
 #sidebar-container {
     position: fixed;
     top: 0;
+    height: 100%; /* Make the sidebar the same height as the viewport */
+
+    background-color: white; /* Set the background color of the sidebar */
+    z-index: 1; /* Set the z-index of the sidebar to be higher than the toggle button */
     right: -300px; /* start the sidebar off-screen */
     width: 200px;
     height: 100%;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     transition: right 0.5s; /* smooth animation when the sidebar is shown or hidden */
+    text-decoration: none; /* Remove the underline */
+    color: inherit; /* Use the same color as the text */
   }
 
 #sidebar {
   /* Hide the sidebar by default */
   display: all;
   float: left;
-  width: 10%;
+  width: 5%;
   padding: 10px 15px;
 }
 
@@ -36,12 +42,14 @@
 }
 h1 {
     font-family: "Palatino", sans-serif;
+    font-size: 100%;
   }
   
   h2 {
-        font-family: 'Apple Chancery';
+        font-family: 'SEVESBRG';
         font-style: normal;
         font-weight: 400;
+        font-size: 100%;
   }
 body {
     font-family: "Palatino", sans-serif;
@@ -74,23 +82,59 @@ body {
     margin-bottom: 20px;
   }
   
-  img {
-    width: 50%;
-    height: 50%;
-    margin: 0 auto;
-  }
+
 
   body {
     margin: 0 auto;
-    text-align: center;
+    padding: 5%;
   }
   header {
     margin: 0 auto;
-    text-align: center;
+    padding: 5%;
   }
-  p {
-    padding-left: 300px;
-    padding-right: 300px;
-    text-align: left;
-    font-size: 16px;
+
+  @font-face {
+  font-family: 'SEVESBRG';
+  src: url('./fonts/SEVESBRG.TTF') format('truetype');
+}
+@media (max-width: 600px) {
+  /* styles that will only be applied when the viewport width is below 600px */
+}
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10%;
   }
+}
+/* Use a responsive grid system to create a flexible layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Apply different styles based on the width of the viewport */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+/* Use responsive images by specifying the width and height as a percentage of the viewport size */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Use responsive text by setting the font size as a percentage of the viewport size */
+body {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+}
