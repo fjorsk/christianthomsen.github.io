@@ -121,7 +121,7 @@ body {
 
 /* Use responsive images by specifying the width and height as a percentage of the viewport size */
 img {
-  width: 100%;
+  width: 75%;
   height: auto;
 }
 
@@ -140,4 +140,15 @@ p {
   padding-right: 20px;
   padding-bottom: 10px;
   padding-left: 20px;
+}
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  transition: all 0.5s ease;
+}
+
+.image-container img:click {
+  transform: scale(1.5);
 }
