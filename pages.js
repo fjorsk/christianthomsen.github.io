@@ -1,1 +1,0 @@
-const pages = ['index.html', 'bio.html', 'cv.html'];
