@@ -121,7 +121,7 @@ body {
 
 /* Use responsive images by specifying the width and height as a percentage of the viewport size */
 img {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
