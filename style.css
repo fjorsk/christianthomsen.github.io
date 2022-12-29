@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     height: 100%; /* Make the sidebar the same height as the viewport */
-
     background-color: white; /* Set the background color of the sidebar */
     z-index: 1; /* Set the z-index of the sidebar to be higher than the toggle button */
     right: -300px; /* start the sidebar off-screen */
@@ -82,8 +81,6 @@ body {
     margin-bottom: 20px;
   }
   
-
-
   body {
     margin: 0 auto;
     padding: 5%;
