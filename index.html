@@ -1,41 +1,47 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <h1>CHRISTIAN THOMSEN</h1>
-    <h2>fjorsk@christianthomsen.com</h2>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fjorsk</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
- <div id="sidebar-container">
-    <div id="sidebar">
-      <a href="index.html">Home</a>
-      <a href="bio.html">Bio</a>
-      <a href="cv.html">CV</a>
-      <a href="https://instagram.com/fjorsk" target="_blank"><i class="fab fa-instagram"></i> </a>
-  </div>
-</div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Fjorsk (front page)</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<button id="toggle-button"><i class="fas fa-bars"></i></button>
-
-<script src="sidebar.js"></script>
-
-  </script>
     <main>
-      <div class="image-container">
-        <img src="./images/webready.jpg" alt="Image 1">
-      
-      </div>
-  <div id="bio-text">
-    <a href="https://instagram.com/fjorsk" target="_blank"><i class="fab fa-instagram"></i> </a>
-    <p></p>
-  </div>
-  
+        <section class="banner">
+            <h1>Welcome to Fjorsk</h1>
+            <p>Explore our work and information about us.</p>
+        </section>
 
-</main>
+        <section class="work">
+            <h2>Work</h2>
+            <div class="scrollable-images">
+                <!-- Add your scrollable images here -->
+            </div>
+        </section>
+
+        <section class="info">
+            <h2>Info</h2>
+            <div class="scrollable-text">
+                <!-- Add your scrollable text here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fjorsk. All rights reserved.</p>
+    </footer>
 </body>
 </html>
