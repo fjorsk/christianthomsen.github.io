@@ -1,149 +1,69 @@
-#sidebar-container {
-    position: fixed;
-    top: 0;
-    height: 100%; /* Make the sidebar the same height as the viewport */
-    background-color: white; /* Set the background color of the sidebar */
-    z-index: 1; /* Set the z-index of the sidebar to be higher than the toggle button */
-    right: -300px; /* start the sidebar off-screen */
-    width: 200px;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    transition: right 0.5s; /* smooth animation when the sidebar is shown or hidden */
-    text-decoration: none; /* Remove the underline */
-    color: inherit; /* Use the same color as the text */
-  }
-
-#sidebar {
-  /* Hide the sidebar by default */
-  display: all;
-  float: left;
-  width: 5%;
-  padding: 10px 15px;
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#toggle-button {
-    font-size: 20px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: rgb(255, 255, 255);
-    color: rgb(98, 98, 98);
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 5px;
-  }
-/* Show the sidebar when the user clicks the button */
-#sidebar.open {
-  display: block;
-}
-h1 {
-    font-family: "Palatino", sans-serif;
-    font-size: 100%;
-  }
-  
-  h2 {
-        font-family: 'SEVESBRG';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 100%;
-  }
+/* Body styles */
 body {
-    font-family: "Palatino", sans-serif;
-  }
-  main {
-    /* Float the main content to the right */
-    float: middle;
-    
-    /* Set the width of the main content */
-    width: 100%;
-  }
+    font-family: Arial, sans-serif; /* Change the font as needed */
+}
 
-  .sidebar a {
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
     text-decoration: none;
-    padding: 0.5em 0;
-    color: black;
-  }
-  #sidebar a:visited {
-    color: #000; /* set the color to black for visited links */
-  }
-  
-  #sidebar a:active {
-    color: #000; /* set the color to black for active links */
-  }
-  #text-container {
-    text-align: left; /* center the text */
-    margin: -50 auto; /* center the container element */
-    width: 50%; /* limit the width of the container element */
-    line-height: 1.5; /* add spacing between lines */
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.work, .info {
+    margin-bottom: 40px;
+}
+
+.work h2, .info h2 {
     margin-bottom: 20px;
-  }
-  
-  body {
-    margin: 0 auto;
-    padding: 5%;
-  }
-  header {
-    margin: 0 auto;
-    padding: 5%;
-  }
-
-  @font-face {
-  font-family: 'SEVESBRG';
-  src: url('./fonts/SEVESBRG.TTF') format('truetype');
-}
-@media (max-width: 600px) {
-  /* styles that will only be applied when the viewport width is below 600px */
-}
-body {
-  font-size: 16px;
 }
 
-@media (max-width: 600px) {
-  body {
-    font-size: 10%;
-  }
-}
-/* Use a responsive grid system to create a flexible layout */
-.container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+.scrollable-images {
+    /* Define styles for scrollable images container */
+    /* You may need to add additional CSS for the images */
 }
 
-/* Apply different styles based on the width of the viewport */
-@media (max-width: 600px) {
-  .container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
+.scrollable-text {
+    /* Define styles for scrollable text container */
+    /* You may need to add additional CSS for the text */
 }
 
-/* Use responsive images by specifying the width and height as a percentage of the viewport size */
-img {
-  width: 90%;
-  height: auto;
-}
-
-/* Use responsive text by setting the font size as a percentage of the viewport size */
-body {
-  font-size: 16px;
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-}
-p {
-  padding-top: 10px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-.image-container img {
-  transition: all 0.5s ease;
-}
-
-.image-container img:click {
-  transform: scale(1.5);
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
